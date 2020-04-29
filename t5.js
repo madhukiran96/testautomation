@@ -4,6 +4,8 @@ describe('nav bar existence with atleast 1 listing', () => {
   
       cy.get('nav')              
       .should('contain', 'Home')
+
+      cy.get('nav').should('be.visible')
       
     })
   })
